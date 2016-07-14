@@ -17,6 +17,9 @@ module FbGraph2
 
     def fetch(params = {}, options = {})
       attributes = get params, options
+      puts build_endpoint(options) 
+      puts "///"
+      puts build_params(params)
       # self.class.new(attributes[:id], attributes).authenticate access_token
     end
 
