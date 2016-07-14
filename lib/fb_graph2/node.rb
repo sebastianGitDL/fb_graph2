@@ -17,7 +17,7 @@ module FbGraph2
 
     def fetch(params = {}, options = {})
       attributes = get params, options
-      self.class.new(attributes[:id], attributes).authenticate access_token
+      # self.class.new(attributes[:id], attributes).authenticate access_token
     end
 
     def edge(edge, params = {}, options = {})
